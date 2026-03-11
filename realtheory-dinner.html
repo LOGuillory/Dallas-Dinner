@@ -15,8 +15,8 @@
       --surface:  #0f1018;
       --border:   rgba(255,255,255,0.07);
       --text:     #eef0f5;
-      --muted:    rgba(200,205,220,0.62);
-      --dim:      rgba(150,158,180,0.45);
+      --muted:    rgba(210,215,228,0.85);
+      --dim:      rgba(190,196,215,0.65);
       /* RealTheory brand gradient */
       --teal:     #2dd4c0;
       --cyan:     #38bdf8;
@@ -62,9 +62,9 @@
 
     .wrapper {
       position: relative; z-index: 1;
-      max-width: 880px;
+      max-width: 1080px;
       margin: 0 auto;
-      padding: 0 48px 100px;
+      padding: 0 32px 100px;
     }
 
     /* ── HEADER ── */
@@ -80,12 +80,12 @@
 
     .private-tag {
       font-family: 'Inter', sans-serif;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 500;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--dim);
-      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--muted);
+      border: 1px solid rgba(255,255,255,0.15);
       padding: 7px 16px;
       border-radius: 2px;
     }
@@ -99,7 +99,7 @@
 
     .eyebrow {
       font-family: 'Inter', sans-serif;
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 500;
       letter-spacing: 0.2em;
       text-transform: uppercase;
@@ -169,7 +169,7 @@
 
     .detail-label {
       font-family: 'Inter', sans-serif;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 500;
       letter-spacing: 0.2em;
       text-transform: uppercase;
@@ -191,9 +191,9 @@
 
     .detail-sub {
       font-family: 'Inter', sans-serif;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 400;
-      color: var(--dim);
+      color: var(--muted);
       line-height: 1.6;
     }
 
@@ -219,11 +219,11 @@
 
     .section-label {
       font-family: 'Inter', sans-serif;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 500;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--dim);
+      color: var(--muted);
       padding-top: 6px;
     }
 
@@ -282,10 +282,10 @@
 
     .t-time {
       font-family: 'Inter', sans-serif;
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 500;
       letter-spacing: 0.06em;
-      color: var(--dim);
+      color: var(--muted);
       width: 58px;
       flex-shrink: 0;
     }
@@ -319,17 +319,17 @@
 
     .chatham p {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 17px;
+      font-size: 19px;
       font-weight: 300;
       font-style: italic;
-      color: var(--dim);
+      color: var(--muted);
       line-height: 1.75;
     }
 
     .chatham strong {
       font-style: normal;
       font-weight: 500;
-      color: var(--muted);
+      color: var(--text);
     }
 
     /* ── FOOTER ── */
@@ -376,20 +376,20 @@
 
     .footer-reach {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 17px;
+      font-size: 18px;
       font-style: italic;
-      color: var(--dim);
+      color: var(--muted);
       max-width: 260px;
       line-height: 1.5;
     }
 
     .footer-note {
       font-family: 'Inter', sans-serif;
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 400;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--dim);
+      color: var(--muted);
     }
 
     /* ── ANIMATIONS ── */
@@ -404,7 +404,7 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 680px) {
-      .wrapper { padding: 0 24px 72px; }
+      .wrapper { padding: 0 20px 72px; }
       header { flex-direction: column; align-items: flex-start; gap: 18px; }
       .details-strip { grid-template-columns: 1fr; }
       .detail-item { border-right: none; border-bottom: 1px solid var(--border); }
